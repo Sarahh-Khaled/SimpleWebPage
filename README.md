@@ -1,4 +1,4 @@
 # SimpleWebPage
-##I this example project to practise HTML and CSS and I'm still completing it every time I get more information<
+I did this simple project to practice using CSS and HTML and I'm still completing it every time I get more information
 #about this repo
-<img src="Capture (2)_LI.jpg"/>
+<img src="Pictures/Capture (2)_LI.jpg"/>
