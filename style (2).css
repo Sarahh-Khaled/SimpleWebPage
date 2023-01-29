@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.5;
@@ -9,11 +14,21 @@ article {
 
 /* PRODUCT */
 
-.center {
+.container {
+  width: 825px;
+  margin: 0 auto;
+}
+
+.shoes-photo {
+  width: auto;
+  height: auto;
+}
+.title {
   background-color: #f7f7f7;
   text-align: center;
   text-transform: uppercase;
   font-size: 22px;
+  padding: 10px;
 }
 
 .price {
@@ -26,6 +41,11 @@ article {
   font-size: 12px;
   text-transform: uppercase;
   color: rgb(78, 75, 75);
+  margin-bottom: 10px;
+}
+
+.paragragh {
+  margin-bottom: 10px;
 }
 
 .info:link,
@@ -40,13 +60,19 @@ article {
 
 /* MORE DETAILS */
 
-.title-upperCase {
+.last-title {
   text-transform: uppercase;
   font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
+.detal-list li {
+  height: 25px;
+}
 .detail-list {
   list-style: square;
+  padding-left: 20px;
 }
 
 /* button style */
@@ -58,10 +84,13 @@ article {
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
- 
+  text-align: center;
+  padding: 10px;
+  width: 100%;
 }
 
 .add-cart:hover {
   color: #000;
   background-color: #fff;
+  border-top: 4px solid #000;
 }
