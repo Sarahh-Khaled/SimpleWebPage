@@ -12,11 +12,28 @@ article {
   border: 4px solid black;
 }
 
+h3::before {
+  content: "sale";
+  text-transform: uppercase;
+  background-color: #ec2f2f;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  padding: 5px 10px;
+  top: -17px;
+  left: -34px;
+}
+
 /* PRODUCT */
 
 .container {
   width: 825px;
   margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
 }
 
 .shoes-photo {
@@ -51,11 +68,61 @@ article {
 .info:link,
 .info:visited {
   color: black;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .info:hover,
 .info:active {
   text-decoration: none;
+}
+
+.box1 {
+  background-color: #000;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.box2 {
+  background-color: #2f6ee2;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.box3 {
+  height: 30px;
+  background-color: #ec2f2f;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.box4 {
+  height: 30px;
+  background-color: rgb(255, 153, 0);
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.box5 {
+  height: 30px;
+  background-color: #90cc20;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.box6 {
+  height: 30px;
+  background-color: #885214;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 /* MORE DETAILS */
