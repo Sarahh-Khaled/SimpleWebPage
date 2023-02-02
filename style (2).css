@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -59,6 +60,8 @@ h3::before {
   text-transform: uppercase;
   color: rgb(78, 75, 75);
   margin-bottom: 10px;
+  padding-right: 100px;
+  float: right;
 }
 
 .paragragh {
@@ -160,4 +163,21 @@ h3::before {
   color: #000;
   background-color: #fff;
   border-top: 4px solid #000;
+}
+
+.section1 {
+  float: left;
+  width: 200px;
+}
+
+.section2 {
+  float: left;
+  width: 400px;
+  margin: 20px 20px;
+}
+
+.section3 {
+  float: right;
+  width: 300px;
+  padding-top: 50px;
 }
