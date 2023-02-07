@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+article {
+  border: 4px solid black;
+}
+
+h3::before {
+  content: "sale";
+  text-transform: uppercase;
+  background-color: #ec2f2f;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  padding: 5px 10px;
+  top: -17px;
+  left: -34px;
+}
+
+/* PRODUCT */
+
+.container {
+  width: 825px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.title {
+  background-color: #f7f7f7;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 10px;
+  grid-column: 1/-1;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.free {
+  font-family: sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(78, 75, 75);
+  /* margin-bottom: 10px; */
+  /* padding-right: 100px; */
+  /* float: right; */
+}
+
+.paragragh {
+  margin-bottom: 10px;
+}
+
+.info:link,
+.info:visited {
+  color: black;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.info:hover,
+.info:active {
+  text-decoration: none;
+}
+
+.boxes-container {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.box1 {
+  background-color: #000;
+  height: 30px;
+  width: 30px;
+}
+
+.box2 {
+  background-color: #2f6ee2;
+  height: 30px;
+  width: 30px;
+}
+
+.box3 {
+  height: 30px;
+  background-color: #ec2f2f;
+  width: 30px;
+}
+
+.box4 {
+  height: 30px;
+  background-color: rgb(255, 153, 0);
+  width: 30px;
+  /* margin-right: 10px; */
+  /* display: inline-block; */
+}
+
+.box5 {
+  height: 30px;
+  background-color: #90cc20;
+  width: 30px;
+}
+
+.box6 {
+  height: 30px;
+  background-color: #885214;
+  width: 30px;
+}
+
+/* MORE DETAILS */
+
+.last-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.detal-list li {
+  height: 25px;
+}
+.detail-list {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* button style */
+
+.add-cart {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  grid-column: 1/-1;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+  border-top: 4px solid #000;
+}
+/* 
+    FLOATS:
+
+.section1 {
+  float: left;
+  width: 200px;
+}
+
+.section2 {
+  float: left;
+  width: 400px;
+  margin: 20px 20px;
+}
+
+.section3 {
+  float: right;
+  width: 300px;
+  padding-top: 50px;
+} */
+
+/* FLEXBOX */
+.section123 {
+  /* display: flex; */
+  flex: 0 0 243;
+  gap: 30px;
+}
+
+.price-free {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.section2 {
+  flex: 1;
+}
+
+.product-details {
+  flex: 1;
+}
+
+/* GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  /* هتلاقي ان السكشنين اللي جمب الصوره واخدين نفس طولها
+   لانه الجريد بياخد بالاطول ويطبقه عالباقي */
+  column-gap: 40px;
+  /* this to remove the space between the header and the content ..one line! */
+}
